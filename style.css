@@ -16,7 +16,7 @@ body    {
     
     input, textarea {
         /* Fill the whole available width. */
-        width: 100%;
+        width: 70%;
     
         /* Special sizing mode that makes the element’s width
            include internal spacing (padding) and borders
