@@ -1,6 +1,9 @@
 body    {
     /* Set line height to 1.5 times the fotn size and use the OS's UI font as the website font
     */
+    max-width: 100ch;
+    margin-inline: 5% 2%;
+    padding: 5% 5% 5% 5%;
     font: 100%/1.5 system-ui;
     label, input, textarea, button {
         /* Make these elements behave like block elements,
@@ -8,7 +11,7 @@ body    {
          */
         display: block;
     }
-    
+
     label {
         /* Add some space before and after each label */
         margin-block: 1em; /* em is a unit that scales with the font size */
@@ -26,4 +29,58 @@ body    {
         /* Use the same font and font metrics as the rest of the page */
         font: inherit;
     }
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    nav a:hover{
+        color: inherit; 
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-bottom-color:  var(--color-accent);
+        background-color:  var(--color-accent);
+    }
+    .current {
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
+        display: flex;
+        flex: 1;
+        padding: 0.5em;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: black;
+    }
+    .bordered {
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
+        display: flex;
+        flex: 1;
+        padding: 0.5em;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-bottom-color: black;
+    }
+    accent-color: var(--color-accent);
+    .contact-me-now {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-block: 10px 10px;
+    }
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    }
+    .article {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 3;
+        margin: 10px;
+    }
+}
+:root {
+    --color-accent: red;
 }

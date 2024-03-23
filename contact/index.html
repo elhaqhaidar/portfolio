@@ -7,19 +7,20 @@
     <title>Contact</title>
     <h1>Contact?</h1>
     <nav>
-        <a href="../index.html">Back to home</a><br>
-        <a href="../projects/index.html">See my projects</a><br>
-        <a href="../about-me/index.html">About me</a><br>
-        <a href="https://github.com/elhaqhaidar" target="_blank">GitHub profile</a>
+        <a class="current" href="../index.html">Home</a>
+        <a class="current" href="../about-me/index.html">About me</a>
+        <a class="bordered" href="../contact/index.html">Contact me</a>
+        <a class="current" href="../projects/index.html">Projects</a>
+        <a class="current" href="https://github.com/elhaqhaidar" target="_blank">GitHub profile</a>
     </nav>
 </head>
 <body>
     <form action="mailto:haidar@mit.edu" method="POST" enxtype="text/plain">
-        <label for="email">Email:</label>
+        <label class="contact-me-now" for="email">Email:</label>
         <input type="email" name="email">
-        <label for="subject">Subject:</label>
+        <label class="contact-me-now" for="subject">Subject:</label>
         <input type="text" name="subject">
-        <label for="body">Body:</label>
+        <label class="contact-me-now" for="body">Body:</label>
         <textarea name="body" id="" cols="30" rows="2.5"></textarea><br>
         <button>Submit</button>
     </form>
